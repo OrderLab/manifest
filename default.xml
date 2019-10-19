@@ -23,7 +23,7 @@
   <project name="S2E/libcpu" path="libcpu"/>
   <project name="S2E/libvmi" path="libvmi"/>
   <project name="S2E/libs2e" path="libs2e" revision="00a9296df84bf27a9d7bb65301540ed8b633818f"/>
-  <project name="OrderLab/s2e-violet-plugins" path="libs2eplugins"/>
+  <project name="OrderLab/s2e-violet-plugins" path="libs2eplugins" remote="s2e-private"/>
   <project name="S2E/libs2ecore" path="libs2ecore" revision="89d36284ebd290247aff080ad46ad1036361e98e"/>
   <project name="S2E/klee" path="klee" revision="2b845bb1d177c33d49d82eb744eccbf0456d0df1"/>
 
