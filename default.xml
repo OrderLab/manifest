@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote  name="s2e" fetch="." />
+  <remote  name="s2e-public" fetch="git://github.com" />
+  <remote  name="s2e-private" fetch="ssh://git@github.com" />
 
-  <default revision="master" remote="s2e" sync-j="4" />
+  <default revision="master" remote="s2e-public" sync-j="4" />
 
-  <project name="build-scripts">
+  <project name="S2E/build-scripts">
     <linkfile src="Dockerfile" dest="Dockerfile"/>
     <linkfile src="Makefile" dest="Makefile"/>
     <linkfile src="Makefile.docker" dest="Makefile.docker"/>
@@ -13,24 +14,24 @@
     <linkfile src="lua" dest="lua"/>
   </project>
 
-  <project name="qemu" revision="v3.0.0-se"/>
+  <project name="S2E/qemu" revision="v3.0.0-se"/>
 
-  <project name="libcoroutine"/>
-  <project name="libq"/>
-  <project name="libfsigcxx" path="libfsigc++"/>
-  <project name="libtcg"/>
-  <project name="libcpu"/>
-  <project name="libvmi"/>
-  <project name="libs2e"/>
-  <project name="libs2eplugins"/>
-  <project name="libs2ecore"/>
-  <project name="klee"/>
+  <project name="S2E/libcoroutine"/>
+  <project name="S2E/libq"/>
+  <project name="S2E/libfsigcxx" path="libfsigc++"/>
+  <project name="S2E/libtcg"/>
+  <project name="S2E/libcpu"/>
+  <project name="S2E/libvmi"/>
+  <project name="S2E/libs2e" revision="00a9296df84bf27a9d7bb65301540ed8b633818f"/>
+  <project name="S2E/libs2eplugins" revision="fc935f53f369bbcbeec704ecfdfec1c52266609b"/>
+  <project name="S2E/libs2ecore" revision="2b845bb1d177c33d49d82eb744eccbf0456d0df1"/>
+  <project name="S2E/klee"  revision="2b845bb1d177c33d49d82eb744eccbf0456d0df1"/>
 
-  <project name="docs"/>
-  <project name="tools"/>
-  <project name="guest-tools" path="guest"/>
-  <project name="decree"/>
+  <project name="S2E/docs"/>
+  <project name="S2E/tools"/>
+  <project name="S2E/guest-tools" path="guest"/>
+  <project name="S2E/decree"/>
 
-  <project name="s2e-env"/>
+  <project name="OrderLab/s2e-env" remote="s2e-private"/>
 </manifest>
 
