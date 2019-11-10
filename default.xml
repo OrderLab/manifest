@@ -25,7 +25,7 @@
   <project name="OrderLab/libs2e" path="libs2e" revision="violet" dest-branch="violet" remote="s2e-private"/>
   <project name="OrderLab/s2e-violet-plugins" path="libs2eplugins" revision="stableVersion" dest-branch="stableVersion" remote="s2e-private"/>
   <project name="S2E/libs2ecore" path="libs2ecore" revision="89d36284ebd290247aff080ad46ad1036361e98e"/>
-  <project name="S2E/klee" path="klee" revision="2b845bb1d177c33d49d82eb744eccbf0456d0df1"/>
+  <project name="OrderLab/s2e-klee" path="klee" revision="violet" dest-branch="violet" remote="s2e-private"/>
 
   <project name="S2E/docs" path="docs"/>
   <project name="S2E/tools" path="tools"/>
