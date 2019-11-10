@@ -5,7 +5,7 @@
 
   <default revision="master" dest-branch="master" remote="s2e-public" sync-j="4" />
 
-  <project name="S2E/build-scripts" path="build-scripts">
+  <project name="OrderLab/s2e-build-scripts" path="build-scripts" revision="violet" dest-branch="violet" remote="s2e-private">
     <linkfile src="Dockerfile" dest="Dockerfile"/>
     <linkfile src="Makefile" dest="Makefile"/>
     <linkfile src="Makefile.docker" dest="Makefile.docker"/>
