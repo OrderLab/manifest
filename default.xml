@@ -23,8 +23,8 @@
   <project name="S2E/libcpu" path="libcpu"/>
   <project name="S2E/libvmi" path="libvmi"/>
   <project name="OrderLab/libs2e" path="libs2e" revision="violet" dest-branch="violet" remote="s2e-private"/>
-  <project name="OrderLab/s2e-violet-plugins" path="libs2eplugins" revision="stableVersion" dest-branch="stableVersion" remote="s2e-private"/>
-  <project name="S2E/libs2ecore" path="libs2ecore" revision="89d36284ebd290247aff080ad46ad1036361e98e"/>
+  <project name="OrderLab/s2e-violet-plugins" path="libs2eplugins" revision="violet" dest-branch="violet" remote="s2e-private"/>
+  <project name="OrderLab/libs2ecore" path="libs2ecore" revision="violet" dest-branch="violet" remote="s2e-private"/>
   <project name="OrderLab/s2e-klee" path="klee" revision="violet" dest-branch="violet" remote="s2e-private"/>
 
   <project name="S2E/docs" path="docs"/>
@@ -32,6 +32,6 @@
   <project name="S2E/guest-tools" path="guest"/>
   <project name="S2E/decree" path="decree"/>
 
-  <project name="OrderLab/s2e-env" path="s2e-env" revision="master" dest-branch="master" remote="s2e-private"/>
+  <project name="OrderLab/s2e-env" path="s2e-env" revision="violet" dest-branch="violet" remote="s2e-private"/>
 </manifest>
 
