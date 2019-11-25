@@ -29,7 +29,7 @@
 
   <project name="S2E/docs" path="docs"/>
   <project name="S2E/tools" path="tools"/>
-  <project name="S2E/guest-tools" path="guest"/>
+  <project name="OrderLab/s2e-guest-tools" path="guest" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
   <project name="S2E/decree" path="decree"/>
 
   <project name="OrderLab/s2e-env" path="s2e-env" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
