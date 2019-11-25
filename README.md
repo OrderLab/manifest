@@ -7,7 +7,7 @@ core S2E components in the stable versions that worked for the Violet project.
 
 ```
     sudo apt-get install repo
-    repo init -u git@github.com:OrderLab/s2e-manifest.git
+    repo init -b violet-s2e-may-release -u git@github.com:OrderLab/s2e-manifest.git
     repo sync
 ```
 
