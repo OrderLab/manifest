@@ -5,7 +5,7 @@
 
   <default revision="master" dest-branch="master" remote="s2e-public" sync-j="4" />
 
-  <project name="OrderLab/s2e-build-scripts" path="build-scripts" revision="violet" dest-branch="violet" remote="s2e-private">
+  <project name="OrderLab/s2e-build-scripts" path="build-scripts" revision="violet-s2e-may-release" dest-branch="violet-s2e-may-release" remote="s2e-private">
     <linkfile src="Dockerfile" dest="Dockerfile"/>
     <linkfile src="Makefile" dest="Makefile"/>
     <linkfile src="Makefile.docker" dest="Makefile.docker"/>
@@ -22,16 +22,16 @@
   <project name="S2E/libtcg" path="libtcg"/>
   <project name="S2E/libcpu" path="libcpu"/>
   <project name="S2E/libvmi" path="libvmi"/>
-  <project name="OrderLab/libs2e" path="libs2e" revision="violet" dest-branch="violet" remote="s2e-private"/>
-  <project name="OrderLab/s2e-violet-plugins" path="libs2eplugins" revision="violet" dest-branch="violet" remote="s2e-private"/>
-  <project name="OrderLab/libs2ecore" path="libs2ecore" revision="violet" dest-branch="violet" remote="s2e-private"/>
-  <project name="OrderLab/s2e-klee" path="klee" revision="violet" dest-branch="violet" remote="s2e-private"/>
+  <project name="OrderLab/libs2e" path="libs2e" revision="violet-s2e-may-release" dest-branch="violet-s2e-may-release" remote="s2e-private"/>
+  <project name="OrderLab/s2e-violet-plugins" path="libs2eplugins" revision="violet-s2e-may-release" dest-branch="violet-s2e-may-release" remote="s2e-private"/>
+  <project name="OrderLab/libs2ecore" path="libs2ecore" revision="violet-s2e-may-release" dest-branch="violet-s2e-may-release" remote="s2e-private"/>
+  <project name="OrderLab/s2e-klee" path="klee" revision="violet-s2e-may-release" dest-branch="violet-s2e-may-release" remote="s2e-private"/>
 
   <project name="S2E/docs" path="docs"/>
   <project name="S2E/tools" path="tools"/>
   <project name="S2E/guest-tools" path="guest"/>
   <project name="S2E/decree" path="decree"/>
 
-  <project name="OrderLab/s2e-env" path="s2e-env" revision="violet" dest-branch="violet" remote="s2e-private"/>
+  <project name="OrderLab/s2e-env" path="s2e-env" revision="violet-s2e-may-release" dest-branch="violet-s2e-may-release" remote="s2e-private"/>
 </manifest>
 
