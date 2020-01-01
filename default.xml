@@ -18,9 +18,9 @@
 
   <project name="S2E/libcoroutine" path="libcoroutine"/>
   <project name="S2E/libq" path="libq"/>
-  <project name="OrderLab/libfsigcxx" path="libfsigc++" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
-  <project name="OrderLab/libtcg" path="libtcg" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
-  <project name="OrderLab/libcpu" path="libcpu" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
+  <project name="OrderLab/s2e-libfsigcxx" path="libfsigc++" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
+  <project name="OrderLab/s2e-libtcg" path="libtcg" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
+  <project name="OrderLab/s2e-libcpu" path="libcpu" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
   <project name="S2E/libvmi" path="libvmi"/>
   <project name="OrderLab/libs2e" path="libs2e" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
   <project name="OrderLab/s2e-violet-plugins" path="libs2eplugins" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
@@ -28,7 +28,7 @@
   <project name="OrderLab/s2e-klee" path="klee" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
 
   <project name="S2E/docs" path="docs"/>
-  <project name="OrderLab/tools" path="tools" path="guest" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
+  <project name="OrderLab/s2e-tools" path="tools" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
   <project name="OrderLab/s2e-guest-tools" path="guest" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
   <project name="S2E/decree" path="decree"/>
 
