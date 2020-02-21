@@ -3,9 +3,9 @@
   <remote  name="s2e-public" fetch="git://github.com" />
   <remote  name="s2e-private" fetch="ssh://git@github.com" />
 
-  <default revision="master" dest-branch="master" remote="s2e-public" sync-j="4" />
+  <default revision="violet" dest-branch="violet" remote="s2e-private" groups="violet" sync-j="4" />
 
-  <project name="OrderLab/s2e-build-scripts" path="build-scripts" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private">
+  <project name="OrderLab/s2e-build-scripts" path="build-scripts">
     <linkfile src="Dockerfile" dest="Dockerfile"/>
     <linkfile src="Makefile" dest="Makefile"/>
     <linkfile src="Makefile.docker" dest="Makefile.docker"/>
@@ -14,23 +14,23 @@
     <linkfile src="lua" dest="lua"/>
   </project>
 
-  <project name="S2E/qemu" path="qemu" revision="v3.0.0-se"/>
+  <project name="OrderLab/s2e-qemu" path="qemu"/>
 
-  <project name="S2E/libcoroutine" path="libcoroutine"/>
-  <project name="S2E/libq" path="libq"/>
+  <project name="OrderLab/s2e-libcoroutine" path="libcoroutine" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
+  <project name="OrderLab/s2e-libq" path="libq" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
   <project name="OrderLab/s2e-libfsigcxx" path="libfsigc++" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
   <project name="OrderLab/s2e-libtcg" path="libtcg" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
   <project name="OrderLab/s2e-libcpu" path="libcpu" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
-  <project name="S2E/libvmi" path="libvmi"/>
+  <project name="OrderLab/s2e-libvmi" path="libvmi" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
   <project name="OrderLab/libs2e" path="libs2e" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
   <project name="OrderLab/s2e-violet-plugins" path="libs2eplugins" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
   <project name="OrderLab/libs2ecore" path="libs2ecore" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
   <project name="OrderLab/s2e-klee" path="klee" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
 
-  <project name="S2E/docs" path="docs"/>
+  <project name="OrderLab/s2e-docs" path="docs" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
   <project name="OrderLab/s2e-tools" path="tools" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
   <project name="OrderLab/s2e-guest-tools" path="guest" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
-  <project name="S2E/decree" path="decree"/>
+  <project name="OrderLab/s2e-decree" path="decree" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
 
   <project name="OrderLab/s2e-env" path="s2e-env" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
 </manifest>
