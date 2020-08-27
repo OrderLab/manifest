@@ -5,33 +5,22 @@
 
   <default revision="master" dest-branch="master" remote="s2e-public" sync-j="4" />
 
-  <project name="OrderLab/s2e-build-scripts" path="build-scripts" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private">
-    <linkfile src="Dockerfile" dest="Dockerfile"/>
-    <linkfile src="Makefile" dest="Makefile"/>
-    <linkfile src="Makefile.docker" dest="Makefile.docker"/>
-    <linkfile src="run-clang-format.sh" dest="run-clang-format.sh"/>
-    <linkfile src=".clang-format" dest=".clang-format"/>
-    <linkfile src="lua" dest="lua"/>
+  <project name="scripts">
+      <linkfile src="Makefile" dest="Makefile"/>
+      <linkfile src="Makefile.docker" dest="Makefile.docker"/>
   </project>
+  <project name="decree"/>
+  <project name="guest-images"/>
+  <project name="qemu" revision="v3.0.0-se"/>
+  <project name="s2e"/>
 
-  <project name="S2E/qemu" path="qemu" revision="v3.0.0-se"/>
+  <!--
+    One would normally clone s2e-env first, then run s2e init, which would call this repo script.
+    We need to clone s2e-env a second time here so that it is possible to build the docker image.
+    TODO: think about how to remove this.
+  -->
+  <project name="s2e-env"/>
 
-  <project name="S2E/libcoroutine" path="libcoroutine"/>
-  <project name="S2E/libq" path="libq"/>
-  <project name="S2E/libfsigcxx" path="libfsigc++"/>
-  <project name="S2E/libtcg" path="libtcg"/>
-  <project name="S2E/libcpu" path="libcpu"/>
-  <project name="S2E/libvmi" path="libvmi"/>
-  <project name="OrderLab/libs2e" path="libs2e" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
-  <project name="OrderLab/s2e-violet-plugins" path="libs2eplugins" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
-  <project name="OrderLab/libs2ecore" path="libs2ecore" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
-  <project name="OrderLab/s2e-klee" path="klee" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
-
-  <project name="S2E/docs" path="docs"/>
-  <project name="S2E/tools" path="tools"/>
-  <project name="OrderLab/s2e-guest-tools" path="guest" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
-  <project name="S2E/decree" path="decree"/>
-
-  <project name="OrderLab/s2e-env" path="s2e-env" revision="violet" dest-branch="violet" groups="violet" remote="s2e-private"/>
+  <project name="s2e-linux-kernel"/>
 </manifest>
 
