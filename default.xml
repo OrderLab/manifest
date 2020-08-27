@@ -15,21 +15,21 @@
   </project>
 
   <project name="S2E/qemu" path="qemu" revision="7e83e471938d2481ed05c35a065b07fdcd4bbbb9" groups="violet" />
-  <project name="S2E/libq" path="libq" revision="1f73a1fac346d0034e62ad2ceade56d8c813a5b5" groups="violet"/>
   <project name="S2E/libtcg" path="libtcg" revision="6261dd912d0ce8afe09c4eabfd5ee990e306f302" groups="violet"/>
   <project name="S2E/libcpu" path="libcpu" revision="7e0f574cc3ac596e5074d19ac78aad9d8701c603" groups="violet"/>
   <project name="S2E/docs" path="docs" revision="68d9a5f1867bd6b1ef9b0808a4e86ac10c15c749" groups="violet"/>
   <project name="S2E/decree" path="decree" revision="a523ec2ec1ca1e1369b33db755bed135af57e09c" groups="violet"/>
 
+  <project name="OrderLab/s2e-libq" path="libq" revision="violet" groups="violet"/>
   <project name="OrderLab/s2e-libcoroutine" path="libcoroutine" revision="violet" dest-branch="violet" groups="violet"/>
   <project name="OrderLab/s2e-libfsigcxx" path="libfsigc++" revision="violet" dest-branch="violet" groups="violet"/>
   <project name="OrderLab/s2e-libvmi" path="libvmi" revision="violet" dest-branch="violet" groups="violet"/>
-  <project name="OrderLab/libs2e" path="libs2e" revision="violet" dest-branch="violet" groups="violet"/>
+  <project name="OrderLab/s2e-tools" path="tools" revision="violet" dest-branch="violet" groups="violet"/>
+
   <project name="OrderLab/violet-s2e-plugins" path="libs2eplugins" revision="violet" dest-branch="violet" groups="violet"/>
+  <project name="OrderLab/violet-libs2e" path="libs2e" revision="violet" dest-branch="violet" groups="violet"/>
   <project name="OrderLab/violet-libs2ecore" path="libs2ecore" revision="violet" dest-branch="violet" groups="violet"/>
   <project name="OrderLab/violet-s2e-klee" path="klee" revision="violet" dest-branch="violet" groups="violet"/>
-  <project name="OrderLab/s2e-tools" path="tools" revision="violet" dest-branch="violet" groups="violet"/>
   <project name="OrderLab/violet-s2e-guest-tools" path="guest" revision="violet" dest-branch="violet" groups="violet"/>
-
   <project name="OrderLab/violet-s2e-env" path="s2e-env" revision="violet-release" dest-branch="violet-release" groups="violet"/>
 </manifest>
