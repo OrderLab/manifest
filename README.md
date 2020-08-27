@@ -7,12 +7,12 @@ core S2E components in the stable versions that worked for the Violet project.
 
 ```
     sudo apt-get install repo
-    repo init -b violet -u git@github.com:OrderLab/s2e-manifest.git
+    repo init -b violet-release -u https://github.com/OrderLab/violet-s2e-manifest.git
     repo sync
 ```
 
-To use this modified manifest for the Violet project, you will need to install our 
-slightly modified [s2e-env repo](https://github.com/OrderLab/s2e-env) instead 
+To use this modified manifest for the Violet project, you will need to install 
+our modified [s2e-env repo](https://github.com/OrderLab/violet-s2e-env) instead 
 of the official s2e-env repo.
 
 If you have previously checked out the repo using the official S2E manifests, make
